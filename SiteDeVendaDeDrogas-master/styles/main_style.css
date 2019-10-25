@@ -1,0 +1,171 @@
+body {
+	background-color: #2d2d2d;
+	overflow: scroll;
+	overflow-x: hidden;
+
+	background-image: url("../resources/maconha.png");
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+}
+
+/* CABEÇALHO */
+div#header {
+	position: absolute;
+	width: 100%;
+	height: 8em;
+
+	background-color: white;
+	top: 0px;
+	left: 0px;
+
+	text-align: center;
+	font-size: 24px;
+
+	border-bottom: 1px solid black;
+}
+div#invisible {
+	opacity: 0.0;
+	width: 100%;
+	height: 8em;
+	top: 0px;
+	left: 0px;
+	font-size: 24px;
+	position: relative;
+}
+
+h1, h2 {
+	font-family: 'Racing Sans One', cursive;
+	color: black;
+}
+
+/* CONTEUDO */
+div#content div.box {
+	border-radius: 20px;
+	background-color: white;
+	position: relative;
+
+	font-size: 18px; 	
+	font-family: monospace;
+	text-align: center;
+
+	height: 20em;
+	width: 20em;
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+
+	float: left;
+} 
+
+div#content div.box > img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: static;
+    width: 20em;
+    height: 14em;
+}
+
+div#content div.box > h1, h2, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+span.sub_msg {
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+/* CONTEUDO DESCRITIVO */
+div#content div.box#descriptor {
+    width: 40em;
+    height: auto;
+}
+
+div#content div.box#descriptor img#product {
+    width: 30em;
+    height: 20em;
+    border-radius: 20px;
+}
+
+div#content div.box#descriptor div#description {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+div#recomendation {
+    border-radius: 20px;
+    background: linear-gradient(green, lightgreen);
+    margin: 1em;
+}
+
+div#warning {
+    border-radius: 20px;
+    background: linear-gradient(red, lightcoral);
+    margin: 1em;
+}
+
+button {
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 10em;
+    height: 2em;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 24px;
+}
+
+/* FORMULARIOS */
+
+/* MENU */
+div#menu {
+	background-color: #7f7f7f;
+	
+	font-family: monospace;
+	font-size: 24px;
+
+	float: right;
+	position: fixed;
+	top: 192px;
+	right: -11em;
+	width: 12em;
+	
+    
+    border-left: 1px solid black;
+
+	transition: right 0.9s;
+}
+
+div#menu:hover {
+	right: 0px;
+}
+
+div#menu > ul > a > li:hover {
+	background: rgba(60, 200, 60, 1);
+}
+
+div#menu > ul > a > li {
+    border-bottom: 1px solid black;
+	transition: background 0.2s;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul > li {
+	padding: 0px;
+}
+
+/* RODAPÉ */
